@@ -8,81 +8,99 @@
     body {
       margin: 0;
       padding: 0;
-      font-family: Arial, sans-serif;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
       background: #000 url('https://telegram.org/img/pattern_dark.png') repeat;
       color: #fff;
       text-align: center;
     }
 
+    /* Header Bar */
     .header {
       display: flex;
       justify-content: space-between;
       align-items: center;
       padding: 12px 15px;
       background: #17212b;
+      position: sticky;
+      top: 0;
+      z-index: 10;
     }
 
     .header img {
-      height: 22px;
+      height: 24px;
     }
 
     .download-btn {
       background: #2aabee;
       color: #fff;
-      padding: 8px 14px;
+      padding: 8px 16px;
       border-radius: 20px;
       text-decoration: none;
       font-size: 0.9rem;
-      font-weight: bold;
+      font-weight: 600;
+      transition: background 0.2s ease-in-out;
     }
 
+    .download-btn:hover {
+      background: #1d8cd8;
+    }
+
+    /* Profile Card */
     .card {
-      margin: 40px auto;
+      margin: 50px auto;
       background: #1c1c1c;
-      border-radius: 12px;
-      padding: 30px 20px;
-      width: 90%;
-      max-width: 400px;
+      border-radius: 16px;
+      padding: 40px 20px;
+      width: 92%;
+      max-width: 420px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.6);
     }
 
     .profile-pic {
-      width: 120px;
-      height: 120px;
+      width: 130px;
+      height: 130px;
       border-radius: 50%;
       object-fit: cover;
-      margin-bottom: 15px;
+      margin-bottom: 18px;
+      border: 3px solid #2aabee;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.4);
     }
 
     h2 {
-      margin: 5px 0;
-      font-size: 1.5rem;
+      margin: 8px 0;
+      font-size: 1.6rem;
+      font-weight: 600;
     }
 
     .username {
       color: #aaa;
-      margin-bottom: 20px;
+      margin-bottom: 25px;
+      font-size: 1rem;
     }
 
     .btn-message {
       display: inline-block;
-      background: #2aabee;
+      background: linear-gradient(45deg, #2aabee, #229ed9);
       color: white;
-      padding: 12px 28px;
-      border-radius: 25px;
+      padding: 14px 32px;
+      border-radius: 28px;
       text-decoration: none;
-      font-size: 1rem;
+      font-size: 1.05rem;
       font-weight: bold;
-      transition: background 0.2s ease-in-out;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      box-shadow: 0 4px 12px rgba(42,171,238,0.4);
     }
 
     .btn-message:hover {
-      background: #1d8cd8;
+      transform: scale(1.05);
+      box-shadow: 0 6px 20px rgba(42,171,238,0.6);
     }
 
     .note {
       margin-top: 20px;
-      font-size: 0.9rem;
+      font-size: 0.95rem;
       color: #bbb;
+      line-height: 1.4;
     }
   </style>
 </head>
@@ -91,16 +109,19 @@
   <!-- Header -->
   <div class="header">
     <img src="https://telegram.org/img/t_logo.png" alt="Telegram Logo">
-    <a href="#" class="download-btn">DOWNLOAD FOR MAC</a>
+    <a href="https://telegram.org/dl/android" class="download-btn" target="_blank">DOWNLOAD FOR ANDROID</a>
   </div>
 
   <!-- Profile Card -->
   <div class="card">
-    <img src="rudra.jpg" alt="Rudra" class="profile-pic">
+    <img src="https://thumbsnap.com/i/8W3yf9Ez.png" alt="Rudra" class="profile-pic">
     <h2>Rudra</h2>
     <div class="username">@stormrudra</div>
     <a href="https://t.me/stormrudra" target="_blank" class="btn-message">SEND MESSAGE</a>
-    <div class="note">If you have <b>Telegram</b>, you can contact <b>Rudra</b> right away.</div>
+    <div class="note">
+      If you have <b>Telegram</b>, you can contact <b>Rudra</b> right away.<br>
+      Otherwise, download Telegram for free on Android.
+    </div>
   </div>
 
 </body>

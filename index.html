@@ -3,46 +3,115 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Find Your Boyfriend</title>
+  <title>MZN Boyfriend Connect</title>
   <style>
     body {
       margin: 0;
-      height: 100vh;
+      min-height: 100vh;
       display: flex;
-      align-items: center;
-      justify-content: center;
       flex-direction: column;
-      background: linear-gradient(135deg, #ff9a9e, #fad0c4);
-      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #ff758c, #ff7eb3);
+      font-family: 'Segoe UI', sans-serif;
       text-align: center;
       color: #fff;
     }
+    main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 0 20px;
+    }
     h1 {
       font-size: 2.2rem;
-      margin-bottom: 10px;
+      margin-bottom: 12px;
+    }
+    .intro {
+      font-size: 1rem;
+      opacity: 0.9;
+      margin-bottom: 18px;
     }
     p {
-      font-size: 1rem;
-      margin-bottom: 20px;
+      font-size: 1.05rem;
+      margin-bottom: 15px;
+      line-height: 1.6;
     }
-    a {
+    ul {
+      list-style: none;
+      padding: 0;
+      margin-bottom: 20px;
+      font-size: 0.95rem;
+    }
+    ul li::before {
+      content: "✨ ";
+    }
+    .btn-telegram {
       display: inline-block;
-      padding: 12px 25px;
-      font-size: 1.1rem;
-      background: #0088cc;
+      padding: 14px 38px;
+      font-size: 1.15rem;
+      font-weight: bold;
+      background: linear-gradient(45deg, #0088cc, #00bfff, #0099ff);
+      background-size: 300% 300%;
+      animation: gradientShift 5s ease infinite;
       color: white;
       text-decoration: none;
-      border-radius: 30px;
-      transition: 0.3s;
+      border-radius: 50px;
+      box-shadow: 0 4px 15px rgba(0, 136, 204, 0.4);
+      transition: transform 0.2s, box-shadow 0.2s;
     }
-    a:hover {
-      background: #006699;
+    .btn-telegram:hover {
+      transform: scale(1.07);
+      box-shadow: 0 6px 20px rgba(0, 136, 204, 0.6);
+    }
+    @keyframes gradientShift {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+    .hint {
+      margin-top: 12px;
+      font-size: 0.9rem;
+      opacity: 0.9;
+      font-style: italic;
+    }
+    footer {
+      padding: 18px 15px;
+      font-size: 0.8rem;
+      background: rgba(0,0,0,0.25);
+      line-height: 1.5;
+    }
+    footer b {
+      color: #ffe;
     }
   </style>
 </head>
 <body>
-  <h1>Find Your Perfect Boyfriend 💕</h1>
-  <p>Chat with genuine boys. Safe • Private • Just for You.</p>
-  <a href="https://t.me/YourTelegramLink" target="_blank">Talk on Telegram</a>
+  <main>
+    <h1>Looking for a Genuine Girl in Muzaffarnagar 💕</h1>
+    <div class="intro">Hi, I’m <b>Rudra</b> from <b>MZN</b> – Software Engineer 👨‍💻</div>
+    <p>
+      I’m the guy who wants to be a <b>cool boyfriend</b> – 
+      someone to hang out with, go on gedi, ghumna-firna, 
+      and have endless baatein together.  
+    </p>
+    <ul>
+      <li>No drama, only mature vibes 💫</li>
+      <li>Friendly, caring & fun-loving 😎</li>
+      <li>Up for real connection, not time-pass ❤️</li>
+    </ul>
+    <a href="https://t.me/YourTelegramLink" class="btn-telegram" target="_blank">
+      💌 Let’s Talk on Telegram
+    </a>
+    <div class="hint">👉 All chats & fun continue only on Telegram 💬</div>
+  </main>
+
+  <footer>
+    <p>💖 This page is specially for girls from <b>Muzaffarnagar</b> who are looking for genuine friendly vibes.</p>
+    <p>🔒 Privacy Note: We do not collect any personal data. All chats and conversations happen only on <b>Telegram</b>.</p>
+    <p>⚠️ Disclaimer: This is not a matrimonial or dating service. It is only for casual friendly conversations.</p>
+    <p>🔞 Users must be 18+ years of age to join. Website owner is not responsible for any chats, meetups or personal outcomes.</p>
+    <p>⚖️ Legal Jurisdiction: All matters subject to <b>Muzaffarnagar, Uttar Pradesh (India)</b> jurisdiction only.</p>
+  </footer>
 </body>
 </html>
